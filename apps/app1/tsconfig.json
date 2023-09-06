@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig-apps.json",
+  "include": ["src", "index.js"],
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "outDir": "lib",
+    "rootDir": ".",
+    "incremental": false,
+    "noEmit": true
+  },
+  "references": [{ "path": "../../packages/components/tsconfig-build.json" }]
+}

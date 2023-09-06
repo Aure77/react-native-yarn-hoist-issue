@@ -1,0 +1,8 @@
+**/*.d.ts
+node_modules/
+src/assets/**
+src/**/*.test.ts*
+src/**/*.spec.ts*
+src/**/__mocks__/**
+
+!.eslintrc.js

@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "include": [],
+  "references": [
+    // Apps are not referenced since they don't emit any JS
+    // Uncomment when doing repo-wide refactoring and you will get
+    // typechecking for all the apps
+    { "path": "./packages/components/tsconfig-build.json" }
+  ]
+}

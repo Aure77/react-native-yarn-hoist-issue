@@ -1,0 +1,42 @@
+{
+  "name": "react-native-yarn-hoist-issue",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "react": "18.1.0",
+    "react-native": "^0.70.0"
+  },
+  "scripts": {
+    "tsc:build": "tsc -b -v",
+    "tsc:clean": "tsc -b --clean && rm -rf ./packages/*/lib/",
+    "tsc:watch": "tsc -b -v --watch",
+    "prepare": "yarn tsc:build",
+    "clean": "find . -name node_modules -type d -prune | xargs rm -rf"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^3.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "@typescript-eslint/typescript-estree": "^5.44.0",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.2",
+    "eslint-plugin-mobx": "^0.0.9",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.9.0"
+  },
+  "resolutions": {
+    "mobx": "6.10.0",
+    "@types/react": "18.0.21",
+    "@types/react-native": "^0.70.0",
+    "**/@types/react-native-svg-charts/react-native-svg": "^13.4.0",
+    "**/react-native-picker-select/@react-native-picker/picker": "2.4.4"
+  }
+}

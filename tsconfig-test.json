@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig-apps.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "preserveSymlinks": true
+  }
+}
